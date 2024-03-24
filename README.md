@@ -25,10 +25,10 @@ Students: Albiona Vukaj and Rina Shabani
 13.	Sentence (Years): The length of the sentence imposed on the individual.
 14.	Record Type: The type of record, indicating the status of the individual in the criminal justice process at the time.
 
-#### Number of attributes: 14 
-Size: 91598 rows
-Dataset size: 11,485 KB
-Source: Data.gov 
+- Number of attributes: 14 
+- Size: 91598 rows
+- Dataset size: 11,485 KB
+- Source: Data.gov 
 1 Dataset Link: https://catalog.data.gov/dataset/texas-department-of-criminal-justice-releases-fy-2022
 2 Dataset Link: https://catalog.data.gov/dataset/texas-department-of-criminal-justice-receives-fy-2022
 
@@ -42,20 +42,20 @@ Detection of Discrimination Patterns: Data analysis can reveal potential discrim
 #### Phase 1
 
 #### Data types
-Date: Numerical-Discrete	
-Type: Categorical-Nominal	
-Inmate Type: Categorical-Nominal	
-Gender: Categorical-Nominal	
-Race: Categorical-Nominal	
-Age: Numerical-Discrete	
-County: Categorical-Nominal
-Offense Code: Categorical-Nominal	
-Offense: Categorical - Nominal	
-Offense Description:Categorical - Nominal	
-Sentence Date: Numerical-Continuous	
-Offense Date: Numerical-Continuous	
-Sentence (Years): Categorical-Ordinal	
-Record Type: Categorical-Nominal
+- Date: Numerical-Discrete	
+- Type: Categorical-Nominal	
+- Inmate Type: Categorical-Nominal	
+- Gender: Categorical-Nominal	
+- Race: Categorical-Nominal	
+- Age: Numerical-Discrete	
+- County: Categorical-Nominal
+- Offense Code: Categorical-Nominal	
+- Offense: Categorical - Nominal	
+- Offense Description:Categorical - Nominal	
+- Sentence Date: Numerical-Continuous	
+- Offense Date: Numerical-Continuous	
+- Sentence (Years): Categorical-Ordinal	
+- Record Type: Categorical-Nominal
 
 - Check for Null Values:In handling null values based on the provided data, we first addressed the missing values in the 'Offense Description' column by filling them using the corresponding 'Offense Code'. Subsequently, any null values in the 'Sentence Date' and 'Offense Date' columns were replaced with 'Unknown'. This process ensured that the dataset was cleansed of null values, allowing for further analysis and modeling with complete data.
 
@@ -72,4 +72,7 @@ Before removing outliers and balancing classes-SMOTE algorithm
 After removing outliers and balancing classes-SMOTE algorithm
 
 ![2](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/ad1996d5-8a50-4034-962e-449ea40bdc6d)
+
+![3](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/efbb4f1d-4b08-460b-9fd6-0944306cb0be)
+
 
