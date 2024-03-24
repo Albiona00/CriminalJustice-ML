@@ -37,7 +37,7 @@ This project aims to predict:
 Classification of Crime Types: The model can be used to classify crimes into different categories such as "Violence," "Drugs," "Other" based on the description and offense code.
 Sentencing Time Analysis: Analyses can uncover trends in judgments based on historical sentencing data using date columns and sentencing years.
 Parole Prediction: A model can determine the factors influencing decisions for parole and predict which cases are more likely to be approved for parole.
-Detection of Discrimination Patterns: Data analysis can reveal potential discrimination patterns based on race or gender in sentencing or parole decisions.
+Detection of Discrimination Patterns: Data analysis can reveal potential discrimination patterns based on race or gender in sentencing or parole decisions. We will use decision trees, random forests, support vector machines, gradient boosting models, naive Bayes, logistic regression, linear regression for prediction.
 
 #### Phase 1
 
