@@ -136,15 +136,15 @@ In this phase, we trained the model using three different algorithms like: Rando
 
 - Case 1:
 In Case 1, we utilize a 70/30 split for training and testing, respectively.
-![438083186_435503565845535_551507096414140460_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/7d5ed3f0-5d90-4392-8ea6-1040c7d509f6)
+- ![438083186_435503565845535_551507096414140460_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/7d5ed3f0-5d90-4392-8ea6-1040c7d509f6)
 
 - Case 2:
 In Case 2, we utilize a 80/20 split for training and testing, respectively.
-![438060621_804436214899443_3072103938635799100_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/f0c26e72-249a-4f06-97d7-e1396b7808bb)
+- ![438060621_804436214899443_3072103938635799100_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/f0c26e72-249a-4f06-97d7-e1396b7808bb)
 
 - Case 3:
 In Case 3, we utilize a 90/10 split for training and testing, respectively.
-![image](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/000624ba-d585-4ff4-9577-d0d04110d6fe)
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/000624ba-d585-4ff4-9577-d0d04110d6fe)
 
 
 
