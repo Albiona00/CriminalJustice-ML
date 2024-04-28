@@ -132,6 +132,19 @@ Detection of Discrimination Patterns: Data analysis can reveal potential discrim
 
 ## Phase 2: Model Training
 
-![3](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/efbb4f1d-4b08-460b-9fd6-0944306cb0be)
+In this phase, we trained the model using three different algorithms like: Random Forest, Decision Tree and Logistic regression, assessing precision, recall, F1-score, and accuracy across various data split ratios: 70% for training and 30% for testing, 80% for training and 20% for testing, and 90% for training and 10% for testing.
+
+- Case 1:
+In Case 1, we utilize a 70/30 split for training and testing, respectively.
+![438083186_435503565845535_551507096414140460_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/7d5ed3f0-5d90-4392-8ea6-1040c7d509f6)
+
+- Case 2:
+In Case 2, we utilize a 80/20 split for training and testing, respectively.
+![438060621_804436214899443_3072103938635799100_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/f0c26e72-249a-4f06-97d7-e1396b7808bb)
+
+- Case 3:
+In Case 3, we utilize a 90/10 split for training and testing, respectively.
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/000624ba-d585-4ff4-9577-d0d04110d6fe)
+
 
 
