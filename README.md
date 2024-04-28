@@ -40,7 +40,7 @@ Parole Prediction: A model can determine the factors influencing decisions for p
 Detection of Discrimination Patterns: Data analysis can reveal potential discrimination patterns based on race or gender in sentencing or parole decisions. We will use decision trees, random forests, support vector machines, gradient boosting models, naive Bayes, logistic regression, linear regression for prediction.
 
 ## Phase 1: Model Preparation
-#### Used Libraries:
+#### Imported Libraries:
 ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/d6e388cb-7501-4e2b-91b6-777bd0d28028)
 
 #### Integration of two datasets
@@ -83,53 +83,54 @@ Detection of Discrimination Patterns: Data analysis can reveal potential discrim
 
 - ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/b38ab94c-ef2f-4303-a873-b454c48e8690)
 
+#### Handling null values
+- In our dataset were found various types of columns with null values:
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/e82ff7b7-0105-4c2d-bb44-877fc4f9eaa5)
+
+-This is after we handled null values:
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/f08c71f9-fd8b-4456-9a4b-dc2b0cd66cd6)
+
 
 #### Handling missing values
 - Number of missing values before handling:
 - ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/2414f766-7db2-4813-8fa8-303af9467fb6)
 
-- For handling we used 'Offense Description' for each 'Offense Code' to fill missing values in the 'Offense Description' column, and any remaining null values are filled with 'Unknown'.
+- For handling missing values of 'Offense Description' column we used 'Offense Code' to fill missing values and any remaining null values are filled with 'Unknown'.
 - Number of rows after handling missing values:
 - ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/6de68eba-d5ad-4e71-87e6-5691eced9671)
+
+
+#### Aggregation
+- We conducted an aggregation by calculating the duration between two key dates: the 'Offense Date' and the 'Sentence Date', resulting in a new column named 'Between Days'.
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/2c658467-f1b4-4b21-95f5-b0a1f2f1b1fa)
 
 
 #### Data transformation
 - We converted the values of the "Sentence (Years)" column into integers:
 - ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/9d4013c6-5069-4ff9-9258-f0dba92722fa)
 
-#### Vectorization
-- Vectorization of Gender and Record Type columns with Label Encoding:
-- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/05f9433a-5381-4b64-a686-dfe178408607)
-
-- Vectorization with One Hot Encoding Type, Inmate Type and Race columns:
-- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/d3c1d067-28c4-4da2-947d-ccceb04d42e3)
-
-
 - Now this is what our dataset's datatype look, after all the changes we've done:
 - ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/e6f5d6c7-9cb2-4d3f-8916-d19f0c091082)
 
 
 #### Outliers Removing
-- We had a total number of 3277 outliers, this is the distribution of numerical columns before and after removing outliers:
-- - ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/27bf0e5a-5358-4c78-a7b4-2748b519e78a)
-- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/3bb5c694-741b-4ea7-bdb5-2e8b04a9bd3a)
+- Sentence numeric distribution before and after outliers removing:
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/2189b39d-6ec3-41a5-8e9e-a892ed85ba3e)
 
 
-- Check for Null Values:In handling null values based on the provided data, we first addressed the missing values in the 'Offense Description' column by filling them using the corresponding 'Offense Code'. Subsequently, any null values in the 'Sentence Date' and 'Offense Date' columns were replaced with 'Unknown'. This process ensured that the dataset was cleansed of null values, allowing for further analysis and modeling with complete data.
+#### Feature engineering
+- From the "Sentence (Years)" column, we created two new columns: "Sentence numeric" and "Sentence scaled", where we transformed the data from a range into integer values:
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/a02c2bfd-0a0f-4a7f-87e4-2e23b919df36)
 
-- Find and Remove Outliers: We detected outliers using Z-Score and and subsequently remove or adjust them to mitigate their potential impact on skewing the predictions of the model.
 
-- Aggregation: We conducted an aggregation by calculating the duration between two key dates: the 'Offense Date' and the 'Sentence Date', resulting in a new column named 'Between Days'.Also we transformed the 'Sentence (Years)' column into numerical values and segmented it into ranges.
+#### SMOTE algorithm
+- Before balancing classes-SMOTE algorithm:
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/69791c2e-d7b7-40ea-83ea-5480b7983486)
 
-- Implement SMOTE (Synthetic Minority Over-sampling Technique)-to address imbalanced classes by oversampling the minority class, thereby balancing the dataset. This approach aims to improve the model's capacity to learn from minority instances effectively, with a specific focus on the 'Offense' class imbalance. We will evaluate the dataset's performance both before and after applying the SMOTE technique.
+- After balancing classes-SMOTE algorithm:
+- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/ffa3a316-c90b-4f0a-a18a-e1868dba49c8)
 
-Before removing outliers and balancing classes-SMOTE algorithm
-
-![1](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/eadd28d0-1193-4c63-bee2-d92822ef1bfc)
-
-After removing outliers and balancing classes-SMOTE algorithm
-
-![2](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/ad1996d5-8a50-4034-962e-449ea40bdc6d)
+## Phase 2: Model Training
 
 ![3](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/efbb4f1d-4b08-460b-9fd6-0944306cb0be)
 
