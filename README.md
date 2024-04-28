@@ -152,5 +152,7 @@ In Case 3, we utilize a 90/10 split for training and testing, respectively. <br 
 
 Random Forest algorithm consistently outperforms the Decision Tree and Logistic Regression algorithms across all test set sizes in terms of precision, recall, F1-score, and accuracy.
 
+#### Why did Random Forest algorithm perform the best?
 
+Random Forest performs exceptionally well in our criminal justice dataset due to its ability to handle the complexity and diversity of the data. Its ensemble approach effectively captures the intricate relationships between various factors like offense types, inmate details, and sentencing outcomes. Additionally, feature importance analysis provides valuable insights for decision-making within the criminal justice system.
 
