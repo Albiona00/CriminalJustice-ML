@@ -36,8 +36,7 @@ Students: Albiona Vukaj and Rina Shabani
 This project aims to predict:
 Classification of Crime Types: The model can be used to classify crimes into different categories such as "Violence," "Drugs," "Other" based on the description and offense code.
 Sentencing Time Analysis: Analyses can uncover trends in judgments based on historical sentencing data using date columns and sentencing years.
-Parole Prediction: A model can determine the factors influencing decisions for parole and predict which cases are more likely to be approved for parole.
-Detection of Discrimination Patterns: Data analysis can reveal potential discrimination patterns based on race or gender in sentencing or parole decisions. We will use decision trees, random forests, support vector machines, gradient boosting models, naive Bayes, logistic regression, linear regression for prediction.
+We will use decision trees, random forests, logistic regression, linear regression for prediction.
 
 ## Phase 1: Model Preparation
 #### Imported Libraries:
@@ -134,17 +133,24 @@ Detection of Discrimination Patterns: Data analysis can reveal potential discrim
 
 In this phase, we trained the model using three different algorithms like: Random Forest, Decision Tree and Logistic regression, assessing precision, recall, F1-score, and accuracy across various data split ratios: 70% for training and 30% for testing, 80% for training and 20% for testing, and 90% for training and 10% for testing.
 
-- Case 1: <br />
-In Case 1, we utilize a 70/30 split for training and testing, respectively.
-- ![438083186_435503565845535_551507096414140460_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/7d5ed3f0-5d90-4392-8ea6-1040c7d509f6)
+- Encodes categorical columns using LabelEncoder.
+- Splits the dataset into features and target variable.
+- Trains and evaluates three different classifiers (Random Forest, Decision Tree, and Logistic Regression) for various test set sizes (0.3, 0.2, and 0.1) using the train_test_split function from scikit-learn.
+- Outputs the precision, recall, F1-score, and accuracy of each classifier for each test set size. 
 
-- Case 2: <br />
-In Case 2, we utilize a 80/20 split for training and testing, respectively.
-- ![438060621_804436214899443_3072103938635799100_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/f0c26e72-249a-4f06-97d7-e1396b7808bb)
+#### Case 1: <br />
+In Case 1, we utilize a 70/30 split for training and testing, respectively. <br />
+![438083186_435503565845535_551507096414140460_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/7d5ed3f0-5d90-4392-8ea6-1040c7d509f6)
 
-- Case 3: <br />
-In Case 3, we utilize a 90/10 split for training and testing, respectively.
-- ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/000624ba-d585-4ff4-9577-d0d04110d6fe)
+#### Case 2: <br />
+In Case 2, we utilize a 80/20 split for training and testing, respectively. <br />
+![438060621_804436214899443_3072103938635799100_n](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/f0c26e72-249a-4f06-97d7-e1396b7808bb)
+
+#### Case 3: <br />
+In Case 3, we utilize a 90/10 split for training and testing, respectively. <br />
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/150968383/000624ba-d585-4ff4-9577-d0d04110d6fe)
+
+Random Forest algorithm consistently outperforms the Decision Tree and Logistic Regression algorithms across all test set sizes in terms of precision, recall, F1-score, and accuracy.
 
 
 
