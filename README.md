@@ -39,9 +39,22 @@ Sentencing Time Analysis: Analyses can uncover trends in judgments based on hist
 Parole Prediction: A model can determine the factors influencing decisions for parole and predict which cases are more likely to be approved for parole.
 Detection of Discrimination Patterns: Data analysis can reveal potential discrimination patterns based on race or gender in sentencing or parole decisions. We will use decision trees, random forests, support vector machines, gradient boosting models, naive Bayes, logistic regression, linear regression for prediction.
 
-#### Phase 1
+## Phase 1
+#### Used Libraries:
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/d6e388cb-7501-4e2b-91b6-777bd0d28028)
 
-#### Data types
+#### Integration of two datasets:
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/fa62cf7e-3ef1-4628-8b9b-b13861648dc9)
+
+
+#### Column renaming to achieve similarity for integration of these two datasets
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/af74aea1-7043-4b25-8f24-a23d158fb93b)
+
+
+
+
+
+#### Data types:
 - Date: Numerical-Discrete	
 - Type: Categorical-Nominal	
 - Inmate Type: Categorical-Nominal	
