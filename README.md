@@ -162,15 +162,18 @@ Random Forest performs exceptionally well in our criminal justice dataset due to
 
 #### Confusion Matrix of Case I:
 The ratio of test and training data is 0.3 to 0.7
-![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/2b1b7e48-a99e-4b33-b96a-6d597346e0a3)
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/487363b6-0491-4e50-8984-d85d1c59aa2b)
+
 
 #### Confusion Matrix of Case II:
 The ratio of test and training data is 0.2 to 0.8
-![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/6dbefabd-8d41-4241-8508-eb639a6c5ce6)
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/de5df0e4-0735-4a98-9925-a153174d70cc)
+
 
 #### Confusion Matrix of Case III:
 The ratio of test and training data is 0.1 to 0.9
-![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/eb263580-97dc-4d42-902c-5434e5ba8155)
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/af2d4aaf-97d2-4ba5-b642-e94bc584657a)
+
 
 
 
