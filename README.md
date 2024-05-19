@@ -191,7 +191,9 @@ Based on the provided example, we observe that the predictions made by the Rando
 ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/a341de0e-895c-4100-b8bc-fd12bc9319dc)
 ![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/30b21ab0-e9d3-4107-b14f-a83b20d86bdd)
 
+### Conclusion
 
+Given its superior accuracy, ability to handle complex feature interactions, and consistent performance across various tests, the Random Forest classifier stands out as the most suitable choice for predicting sentence lengths in our criminal justice dataset. This choice ensures that our predictions are not only accurate but also reliable and interpretable, providing valuable insights for both data-driven decision-making and policy formulation.
 
 
 
