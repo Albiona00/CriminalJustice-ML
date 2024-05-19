@@ -156,3 +156,51 @@ Random Forest algorithm consistently outperforms the Decision Tree and Logistic 
 
 Random Forest performs exceptionally well in our criminal justice dataset due to its ability to handle the complexity and diversity of the data. Its ensemble approach effectively captures the intricate relationships between various factors like offense types, inmate details, and sentencing outcomes. Additionally, feature importance analysis provides valuable insights for decision-making within the criminal justice system.
 
+## Phase 3: Analysis and Evaluation & Application of ML Tools
+
+ The confusion matrix for the Random Forest model and Decision Tree shows a strong diagonal line from the top-left to the bottom-right, indicating a high number of correct predictions (where the predicted values match the actual values).The confusion matrix shows that most of the predictions lie along the diagonal, which indicates that the model is making a high number of correct predictions. These metrics are all very high, indicating excellent performance by the Random Forest model and Decision Tree. High precision and recall indicate that the model is both accurate (low false positives) and complete (low false negatives), respectively.The confusion matrix for the Logistic Regression model, however, shows a much less pronounced diagonal line. The confusion matrix for Logistic Regression indicates that the model is not performing as well as the two other algorithms. There are more instances of misclassification, which means that Logistic Regression is less effective at correctly predicting the sentence years.
+
+#### Confusion Matrix of Case I:
+The ratio of test and training data is 0.3 to 0.7
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/487363b6-0491-4e50-8984-d85d1c59aa2b)
+
+
+#### Confusion Matrix of Case II:
+The ratio of test and training data is 0.2 to 0.8
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/de5df0e4-0735-4a98-9925-a153174d70cc)
+
+
+#### Confusion Matrix of Case III:
+The ratio of test and training data is 0.1 to 0.9
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/af2d4aaf-97d2-4ba5-b642-e94bc584657a)
+
+
+Analysis and evaluation of the performance of three selected algorithms: Random Forest, Decision Tree, and Logistic Regression, using test example data. The features used for training are: 'Type', 'Inmate Type', 'Gender', 'Race', 'Age', 'County', 'Offense Code', 'Offense', 'Offense Description', 'Record Type', while the target variable is Sentence Numeric, which predicts how many years of imprisonment a convicted individual will receive based on the above information.
+
+#### Test example data and verifying the accuracy
+Based on the provided example, we observe that the predictions made by the Random Forest and Decision Tree algorithms are highly accurate, each predicting a sentence length of 18 years for the given test data. This accuracy is validated by the actual sentence length of 18 years found in our dataset, which corresponds to the individual with the following attributes. The results demonstrate the high accuracy of Random Forest and Decision Tree algorithms which is around 99%. On the other hand, the Logistic Regression model predicted a significantly lower sentence length of 2 years, demonstrating a much lower accuracy of 18%. This discrepancy highlights the superior performance and reliability of the Random Forest and Decision Tree models in predicting sentence lengths based on the given features in our dataset. The actual data confirm the predictions of these two models, thereby verifying their accuracy.
+
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/3d2cf401-3748-43cd-97f3-43b0dd026aca)
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/437647aa-adf3-4caf-bca5-86a84728315e)
+
+#### Other test example data:
+
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/384c3f3d-5c64-431f-ace8-ff438753711b)
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/d528c733-9e1e-45b5-a743-247205caef01)
+
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/a341de0e-895c-4100-b8bc-fd12bc9319dc)
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/30b21ab0-e9d3-4107-b14f-a83b20d86bdd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
