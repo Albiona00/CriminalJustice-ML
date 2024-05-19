@@ -156,3 +156,35 @@ Random Forest algorithm consistently outperforms the Decision Tree and Logistic 
 
 Random Forest performs exceptionally well in our criminal justice dataset due to its ability to handle the complexity and diversity of the data. Its ensemble approach effectively captures the intricate relationships between various factors like offense types, inmate details, and sentencing outcomes. Additionally, feature importance analysis provides valuable insights for decision-making within the criminal justice system.
 
+## Phase 3: Analysis and Evaluation & Application of ML Tools
+
+ The confusion matrix for the Random Forest model and Decision Tree shows a strong diagonal line from the top-left to the bottom-right, indicating a high number of correct predictions (where the predicted values match the actual values).The confusion matrix shows that most of the predictions lie along the diagonal, which indicates that the model is making a high number of correct predictions. These metrics are all very high, indicating excellent performance by the Random Forest model and Decision Tree. High precision and recall indicate that the model is both accurate (low false positives) and complete (low false negatives), respectively.The confusion matrix for the Logistic Regression model, however, shows a much less pronounced diagonal line. The confusion matrix for Logistic Regression indicates that the model is not performing as well as the two other algorithms. There are more instances of misclassification, which means that Logistic Regression is less effective at correctly predicting the sentence years.
+
+#### Confusion Matrix of Case I:
+The ratio of test and training data is 0.3 to 0.7
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/2b1b7e48-a99e-4b33-b96a-6d597346e0a3)
+
+#### Confusion Matrix of Case II:
+The ratio of test and training data is 0.2 to 0.8
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/6dbefabd-8d41-4241-8508-eb639a6c5ce6)
+
+#### Confusion Matrix of Case III:
+The ratio of test and training data is 0.1 to 0.9
+![image](https://github.com/Albiona00/CriminalJustice-ML/assets/74986994/eb263580-97dc-4d42-902c-5434e5ba8155)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
